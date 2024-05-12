@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects in JavaScript</title>
+</head>
+<body>
+    <script>    
+    var tut = {
+        "topic": "javascript",
+        "trainer": "vivek",
+        "mode": "online"
+    };
+    document.write("Topic: " + tut.topic);
+    document.write("<br> <br>");
+    document.write("Trainer: " + tut.trainer);
+    document.write("<br><br>");
+    document.write("Mode: " + tut.mode);
+    document.write("<br> <br>");
+
+    var txt = "";
+    var x;
+    for (x in tut){
+        txt += tut[x] + ",";
+    }
+
+    document.write(txt);
+    </script>
+</body>
+</html>

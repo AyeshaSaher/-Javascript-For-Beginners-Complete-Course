@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While Loop In JavaScript</title>
+</head>
+<body>
+    <!-- While: repeatedly executes statements as long as give condition is true -->
+    <script>
+        var num = parseInt(prompt("Enter the number", "Enter ..."))
+        var count = 0;
+        while (num > 0 )
+        {
+            num = Math.trunc(num / 10);
+            count++;
+        }
+        document.write("Digits: " + count);
+    </script>
+</body>
+</html>
